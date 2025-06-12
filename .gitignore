@@ -2,8 +2,11 @@
 mongodb-win32-x86_64-windows-8.0.10/
 mongosh-2.5.2-win32-x64/
 data/
+<<<<<<< HEAD
 
 # MongoDB local binaries and data
 mongodb-win32-x86_64-windows-8.0.10/
 mongosh-2.5.2-win32-x64/
 data/
+=======
+>>>>>>> e543d5a177451e6bda3ce4d6c10e07469ac4259c
