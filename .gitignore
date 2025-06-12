@@ -1,0 +1,4 @@
+# Ignore MongoDB binaries and DB data
+mongodb-win32-x86_64-windows-8.0.10/
+mongosh-2.5.2-win32-x64/
+data/
