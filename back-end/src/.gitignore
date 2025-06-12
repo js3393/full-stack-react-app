@@ -1,0 +1,11 @@
+# Ignore all node_modules
+**/node_modules/
+
+# Ignore environment variables
+**/.env
+
+# Ignore build folder in React
+frontend/build/
+
+# Ignore logs
+*.log
