@@ -1,5 +1,9 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import { MongoClient, ServerApiVersion } from 'mongodb';
+
 
 const app = express();
 
@@ -9,7 +13,9 @@ let db;
 // Connect to MongoDB
 
 async function connectToDB() {
-    const uri = 'mongodb://127.0.0.1:27017';
+   // const uri = 'mongodb://127.0.0.1:27017'; // run only if on local environment
+   const uri = process.env.MONGO_URI;
+
 
     const client = new MongoClient(uri, {
         serverApi: { 
@@ -53,14 +59,18 @@ app.post('/api/articles/:name/comments', async (req, res) => {
     const { postedBy, text } = req.body;
     const newComment = { postedBy, text };
     
-    const updatedArticle = await db.collection('articles').findOneAndUpdate({ articleName: name },  {
-        $push: { comments: newComment }
-        },  { 
-            returnDocument: 'after' }).then(updatedArticle => {
-                res.json(updatedArticle);}).catch(err => {
-                    console.error('Error adding comment:', err);
-                    res.status(500).send('Error adding comment');
-    });
+    try {
+        const updatedArticle = await db.collection('articles').findOneAndUpdate(
+            { articleName: name },
+            { $push: { comments: newComment }},
+            { returnDocument: 'after'}
+        );
+        res.json(updatedArticle);
+    } 
+        catch (err) {
+            console.error('Error updating article:', err);
+            res.status(500).send('Error updating article');
+        }
 });
 
     

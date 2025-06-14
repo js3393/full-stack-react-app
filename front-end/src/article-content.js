@@ -1,18 +1,43 @@
 const articles = [
   {
-    name: "John-Doe",
-    title: "The Rise of AI",
-    content: ["Artificial Intelligence is transforming industries and creating new opportunities."]
+    name: "learn-react",
+    title: "Learn React",
+    content: [
+      "React is a JavaScript library for building user interfaces.",
+      "It uses a component-based architecture and a virtual DOM for efficient rendering."
+    ]
   },
   {
-    name: "Jane-Smith",
-    title: "Sustainable Living",
-    content: ["Sustainability is not just a trend, it's a necessity for the future of our planet."]
+    name: "learn-node",
+    title: "Learn Node",
+    content: [
+      "Setting up a REST API with Node.js and Express is straightforward.",
+      "You can define routes and connect to a database like MongoDB."
+    ]
   },
   {
-    name: "Carlos-Rivera",
-    title: "Exploring the Cosmos",
-    content: ["Space exploration expands our understanding of the universe and our place in it."]
+    name: "learn-mongodb",
+    title: "Learn MongoDB",
+    content: [
+      "MongoDB is a NoSQL database that stores data in JSON-like documents.",
+      "It is schema-less and great for flexible data models."
+    ]
+  },
+  {
+    name: "frontend-tools",
+    title: "Frontend Tools",
+    content: [
+      "Frontend developers rely on tools like Webpack, Vite, and Babel to streamline their workflow.",
+      "Mastery of these tools improves performance and development speed."
+    ]
+  },
+  {
+    name: "backend-fundamentals",
+    title: "Backend Fundamentals",
+    content: [
+      "Backend development involves working with databases, authentication, and server logic.",
+      "Understanding concepts like REST, CRUD, and middleware is essential."
+    ]
   }
 ];
 
