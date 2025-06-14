@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
+import axios from 'axios'
 import './App.css'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage';
@@ -19,7 +20,12 @@ const routes = [{
       element: <HomePage />
     }, {
       path: '/articles/:name',  //catch all routes that start with /articles/This will match any article name
-      element: <ArticlePage />
+      element: <ArticlePage />,
+      loader: async function( {params} ) {
+        const response = await axios.get('/api/articles/${params.name}');
+        const { upvotes, comments } = response.data;
+        return {upvotes, comments};
+      }
     }, {
       path: '/about',
       element: <AboutPage />
@@ -29,7 +35,8 @@ const routes = [{
     }, {
       path: '*',
       element: <NotFoundPage />
-  }]
+      }
+    ]
 }]
 // This is the main entry point for the React application.
 const router = createBrowserRouter(routes);
