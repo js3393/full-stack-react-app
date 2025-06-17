@@ -1,5 +1,18 @@
 const articles = [
   {
+    name: "jaguar-vs-leopard",
+    title: "Jaguar vs Leopard",
+    content: [
+    "Physical Differences:\nAlthough both jaguars and leopards feature large rosettes on their coats, there are key physical differences that distinguish them.",
+    
+    "What Do Jaguars Look Like?\nJaguars (Panthera onca), found primarily in Central and South America, have a more muscular body shape, stockier legs and a broader head. They are built for strength, with one of the most powerful bite forces among big cats.\n\nTheir coat color varies from light yellow to reddish hues, and some individuals exhibit dark coloring, often referred to as melanism.",
+    
+    "What Do Leopards Look Like?\nLeopards (Panthera pardus), on the other hand, are more slender and agile. They have longer bodies and tails, which help them climb trees more efficiently. The Persian leopard, a subspecies found in western Asia, is known for its larger size compared to other leopards.\n\nLike jaguars, leopards can also exhibit dark coloring, but their spots tend to be smaller and more densely packed.",
+    
+    "Hunting Behavior:\nThe way these wild cats hunt also sets them apart. Jaguar hunting behavior is defined by brute force; they use their powerful jaws to deliver a fatal bite to the skull or neck of their prey. Jaguars often hunt near water, preying on animals such as caimans, capybaras and deer."
+    ]
+  },
+  {
     name: "learn-react",
     title: "Learn React",
     content: [

@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://probable-space-lamp-4j79g7rpg946h57ww-5173.app.github.dev',
+        target: 'http://localhost:8000',
         changeOrigin: true,
       }
     },
