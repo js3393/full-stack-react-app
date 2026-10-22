@@ -14,6 +14,11 @@ This is a basic full-stack application built using **React (frontend)** and **Ex
    cd front-end
    ```
 
+2. Download necessary files:
+
+   ```bash
+   npm install
+   ```
 2. Start the development server using Vite:
 
    ```bash
