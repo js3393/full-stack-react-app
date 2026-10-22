@@ -19,13 +19,13 @@ This is a basic full-stack application built using **React (frontend)** and **Ex
    ```bash
    npm install
    ```
-2. Start the development server using Vite:
+3. Start the development server using Vite:
 
    ```bash
    npm run dev
    ```
 
-3. **Ensure port visibility is set to public:**
+4. **Ensure port visibility is set to public:**
 
    * In Codespaces or your cloud IDE, go to the **PORTS** tab.
    * Locate the frontend port (usually `5173`) and set its visibility to **Public**.
